@@ -1,0 +1,4 @@
+contenido
+del
+archivo
+txt

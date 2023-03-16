@@ -1,0 +1,23 @@
+contenidoFile = [
+    "contenido",
+    "del",
+    "archivo",
+    "txt"
+]
+
+file = open("./Clase8/file.txt", "wt")
+for linea in contenidoFile:
+    linea += '\n'
+    file.write(linea)
+
+file.close()
+
+file = open("./Clase8/file.txt", "rt")
+datos = file.read()
+
+otro_file = open("./Clase8/file2.txt", "wt")
+for linea in datos:
+    otro_file.write(linea)
+    
+file.close()
+otro_file.close()
